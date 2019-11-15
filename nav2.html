@@ -1,0 +1,58 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="style2.css" type="text/css" media="all">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  
+  <nav class="navbar">
+    <a href="#" class="navbar-brand"><span>S</span>um<span>a</span>N</a>
+  <!---  <a href="#" class="navbar-brand"></a> --->
+    <ul>
+      <li><a href="#html">HTML</a></li>
+      <li><a href="#css">CSS</a></li>
+      <li><a href="#javascript">JavaScript</a></li>
+    </ul>
+    <button class="navbar-toggler">
+      <span></span>
+    </button>
+  </nav>
+ <header class="intro"><a href="http://www.1tooall.com/sourov/sourov.php" target="_top"><div class="mid"><h3>Create By ,Sourov Hazra</h3></div></a>
+  </header>
+  <section id="html" class="container"><h2><i class="fa fa-html5"></i></h2></section>
+  <section id="css" class="container"><h2><i class="fa fa-css3"></i></h2></section>
+  <section id="javascript" class="container"><h2><i class="fa fa-jsfiddle"></i></h2></section>
+ 
+  
+   
+    
+      <script>
+	const navbarToggler = document.querySelector(".navbar-toggler");
+const navbarMenu = document.querySelector(".navbar ul");
+const navbarLinks = document.querySelectorAll(".navbar a");
+
+navbarToggler.addEventListener("click", navbarTogglerClick);
+
+function navbarTogglerClick() {
+  navbarToggler.classList.toggle("open-navbar-toggler");
+  navbarMenu.classList.toggle("open");
+}
+
+navbarLinks.forEach(elem => elem.addEventListener("click", navbarLinkClick));
+
+function navbarLinkClick() {
+  if(navbarMenu.classList.contains("open")) {
+    navbarToggler.click();
+  }
+}
+	
+	
+	
+	
+	</script>
+</body>
+</html>
